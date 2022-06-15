@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1.5;
+  background: linear-gradient(to right, skyblue, rgb(235, 169, 235), rgb(192, 187, 192));
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  gap: 64px;
+  padding: 32px;
+  margin: 0.8rem auto;
+  place-content: center;
+  border: 0.2rem solid;
+  grid-template-columns: repeat(5, 100px);
+}
+
+.container1 {
+  display: grid;
+  gap: 64px;
+  padding: 32px;
+  margin: 0.8rem auto;
+  place-content: center;
+  border: 0.2rem solid;
+  grid-template-columns: repeat(3, 100px);
+}
+
+.container2 {
+  padding: 32px;
+  margin: 0.8rem auto;
+  border: 0.2rem solid;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: greenyellow;
+  padding: 16px;
+}
+.box:hover {
+  background-color: mediumvioletred;
+  width: 100px;
+  height: 100px;
+}
+
+.b1 {
+  transition: background-color 1s ease 0.5s;
+}
+
+.b2 {
+  background-color: hotpink;
+  transition: background-color 1s linear 0.5s;
+}
+
+.b3 {
+  background-color: indianred;
+  transition: background-color 1s ease-in 0.5s;
+}
+
+.b4 {
+  background-color: maroon;
+  transition: background-color 1s ease-out 0.5s;
+}
+
+.b5 {
+  background-color: olive;
+  transition: background-color 1s ease-in-out 0.5s;
+}
+
+.box1 {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(223, 15, 171);
+}
+
+.c1 {
+  background-color: orange;
+  transform: rotate(20deg);
+}
+.c1:hover {
+  transform: rotate(-40deg);
+}
+
+.c2 {
+  background-color: orangered;
+  transform: scale(1.5);
+}
+.c2:hover {
+  transform: scale(0.5);
+}
+
+.c3 {
+  background-color: orchid;
+  transform: translateX(50px);
+}
+.c3:hover {
+  transform: translateY(-50px);
+}
+
+.c4 {
+  background-color: peru;
+  transform: skewX(150deg);
+}
+.c4:hover {
+  transform: skewY(150deg);
+}
+
+.c5 {
+  border-color: powderblue;
+  transform: rotateY(50deg) scale(0.8) translateY(10%) skewY(10deg);
+}
+.c5:hover {
+  transform: rotateX(-80deg) scale(1.01) translateY(-10%) skewY(-10deg);
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(15, 223, 84);
+}
+
+.d1 {
+  background-color: yellow;
+  transform: perspective(200px) rotateX(20deg);
+}
+.d1:hover {
+  transform: perspective(300px) rotateY(-20deg) rotateZ(-30deg);
+}
+
+.d2 {
+  background-color: red;
+  transform: perspective(100px) rotateY(135deg) scale(1.5);
+}
+.d2:hover {
+  transform: perspective(200px) rotateX(-105deg) scale(0.9);
+}
+
+.d3 {
+  background-color: grey;
+  transform: perspective(300px) translateZ(50px);
+}
+.d3:hover {
+  transform: perspective(300px) translateX(50px);
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(100, 226, 50);
+  position: relative;
+  -webkit-animation: demo 2s linear 0.5s 6 forwards;
+          animation: demo 2s linear 0.5s 6 forwards;
+}
+
+@-webkit-keyframes demo {
+  0% {
+    left: 0;
+    background-color: indigo;
+  }
+  25% {
+    left: 200px;
+    background-color: lawngreen;
+  }
+  50% {
+    left: 800px;
+    background-color: lightseagreen;
+  }
+  75% {
+    left: 1000px;
+    background-color: magenta;
+  }
+  100% {
+    left: 1200px;
+    background-color: midnightblue;
+  }
+}
+
+@keyframes demo {
+  0% {
+    left: 0;
+    background-color: indigo;
+  }
+  25% {
+    left: 200px;
+    background-color: lawngreen;
+  }
+  50% {
+    left: 800px;
+    background-color: lightseagreen;
+  }
+  75% {
+    left: 1000px;
+    background-color: magenta;
+  }
+  100% {
+    left: 1200px;
+    background-color: midnightblue;
+  }
+}/*# sourceMappingURL=style.css.map */
