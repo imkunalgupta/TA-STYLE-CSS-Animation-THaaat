@@ -1,0 +1,30 @@
+body {
+  line-height: 1.5;
+  background: linear-gradient(to right, skyblue, rgb(235, 169, 235), rgb(192, 187, 192));
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+}/*# sourceMappingURL=general.css.map */
