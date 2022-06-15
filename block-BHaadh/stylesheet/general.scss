@@ -1,0 +1,14 @@
+body {
+    line-height: 1.5;
+    background:  linear-gradient(to right, skyblue, rgb(235, 169, 235), rgb(192, 187, 192));
+    text-align: center;
+    padding: 1.5rem;
+}
+
+$heading: 1;
+@while $heading <= 6 {
+    h#{$heading} {
+        font-size: 2rem - ($heading * 0.25rem);
+    }
+    $heading: $heading + 1;
+}
